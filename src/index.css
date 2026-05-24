@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-prepzo-green: #0a5a3a;
+  --color-prepzo-green-dark: #073d28;
+  --color-prepzo-green-mid: #0d7549;
+  --color-prepzo-yellow: #d99c2b;
+  --color-prepzo-yellow-light: #fef3d7;
+  --color-prepzo-light-green: #e8f3ef;
+  --color-prepzo-bg: #f8faf9;
+  --font-sans: "Inter", "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #f8faf9;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0a5a3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #073d28;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-green {
+    background: linear-gradient(135deg, #0a5a3a 0%, #0d7549 100%);
+  }
+  .gradient-yellow {
+    background: linear-gradient(135deg, #d99c2b 0%, #f0b93a 100%);
+  }
+  .gradient-hero {
+    background: linear-gradient(160deg, #e8f3ef 0%, #f8faf9 50%, #fef9ee 100%);
+  }
+}
