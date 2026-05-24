@@ -50,10 +50,10 @@ const StudyMaterial = () => {
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 text-sm group-hover:text-prepzo-green transition-colors">{mat.title}</h3>
-                <div className="flex items-center gap-2 mt-1.5">
+                <div className="flex flex-wrap items-center gap-2 mt-1.5">
                   <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${typeColors[mat.type] || 'bg-gray-100 text-gray-600'}`}>{mat.type}</span>
-                  <span className="text-xs text-gray-400 flex items-center gap-1"><FileText className="h-3 w-3" /> {mat.category}</span>
-                  <span className="text-xs text-gray-400">{mat.size}</span>
+                  <span className="text-xs text-gray-400 flex items-center gap-1 whitespace-nowrap"><FileText className="h-3 w-3" /> {mat.category}</span>
+                  <span className="text-xs text-gray-400 whitespace-nowrap">{mat.size}</span>
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ const HeroSection = () => {
               India's #1 Smart Prep Platform
             </div>
 
-            <h1 className="text-4xl sm:text-5xl xl:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
+            <h1 className="text-3xl sm:text-5xl xl:text-6xl font-black text-gray-900 leading-[1.1] tracking-tight">
               Smart prep, <br />
               <span className="text-prepzo-green">learn anytime</span>{' '}
               <span className="text-prepzo-yellow">anywhere</span>
@@ -37,7 +37,7 @@ const HeroSection = () => {
             </p>
 
             {/* Checklist */}
-            <div className="mt-6 grid grid-cols-2 gap-2 max-w-md lg:mx-0 mx-auto">
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-md lg:mx-0 mx-auto text-left">
               {['Live & Recorded Classes', 'Expert IIT/AIIMS Faculty', 'All India Test Series', 'Personalised Mentorship'].map(f => (
                 <div key={f} className="flex items-center gap-2 text-sm text-gray-700 font-medium">
                   <CheckCircle className="h-4 w-4 text-prepzo-green flex-shrink-0" />
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-8">
+            <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-8">
               {[
                 { num: '50K+', label: 'Active Students' },
                 { num: '100+', label: 'Expert Faculty' },
@@ -89,7 +89,7 @@ const HeroSection = () => {
             </div>
 
             {/* Floating card 1 — top right */}
-            <div className="absolute -top-5 -right-4 bg-white rounded-2xl shadow-xl px-5 py-4 border border-gray-100 flex items-center gap-3 w-52">
+            <div className="hidden sm:flex absolute -top-5 -right-4 bg-white rounded-2xl shadow-xl px-5 py-4 border border-gray-100 items-center gap-3 w-52">
               <div className="h-11 w-11 rounded-xl gradient-green flex items-center justify-center text-white text-xl flex-shrink-0">📚</div>
               <div>
                 <p className="text-xs text-gray-500">Study Material</p>
@@ -98,7 +98,7 @@ const HeroSection = () => {
             </div>
 
             {/* Floating card 2 — bottom left */}
-            <div className="absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-5 py-4 border border-gray-100 flex items-center gap-3 w-52">
+            <div className="hidden sm:flex absolute -bottom-5 -left-4 bg-white rounded-2xl shadow-xl px-5 py-4 border border-gray-100 items-center gap-3 w-52">
               <div className="h-11 w-11 rounded-xl bg-prepzo-yellow-light border border-prepzo-yellow/30 flex items-center justify-center text-xl flex-shrink-0">🎯</div>
               <div>
                 <p className="text-xs text-gray-500">Mock Tests</p>
@@ -107,9 +107,9 @@ const HeroSection = () => {
             </div>
 
             {/* Live badge */}
-            <div className="absolute top-5 left-5 bg-white/90 backdrop-blur rounded-xl px-3 py-2 flex items-center gap-2 shadow-md">
+            <div className="absolute top-3 left-3 sm:top-5 sm:left-5 bg-white/90 backdrop-blur rounded-xl px-2 sm:px-3 py-1.5 sm:py-2 flex items-center gap-2 shadow-md">
               <span className="h-2 w-2 rounded-full bg-red-500 animate-ping"></span>
-              <span className="text-xs font-bold text-gray-800">LIVE Classes Every Day</span>
+              <span className="text-[10px] sm:text-xs font-bold text-gray-800">LIVE Classes Every Day</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ const HeroSection = () => {
       <div className="border-t border-gray-200/50 bg-white/50 backdrop-blur-sm py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Trusted by Students Preparing For</p>
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-12 items-center">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-12 items-center">
             {['JEE Main', 'JEE Advanced', 'NEET UG', 'CBSE Board', 'IMO', 'NTSE'].map(exam => (
               <span key={exam} className="text-sm font-extrabold text-gray-700 tracking-tight px-3 py-1 border border-gray-200 rounded-lg">{exam}</span>
             ))}
