@@ -81,10 +81,15 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: 'About Us', path: '/about-us' },
+                { label: 'Courses', path: '/courses' },
+                { label: 'Test Series', path: '/test-series' },
                 { label: 'Results', path: '/results' },
                 { label: 'Study Material', path: '/study-material' },
-                { label: 'Test Series', path: '/test-series' },
-                { label: 'Careers', path: '/' },
+                { label: 'Scholarship', path: '/scholarship' },
+                { label: 'Prepzo Store', path: '/store' },
+                { label: 'Blogs', path: '/blogs' },
+                { label: 'News', path: '/news' },
+                { label: 'Careers', path: '/careers' },
               ].map((link) => (
                 <li key={link.label}>
                   <Link to={link.path} className="text-sm text-white/60 hover:text-white transition-colors flex items-center gap-1.5 group">
@@ -124,7 +129,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-xs text-white/40 font-medium">Office</p>
-                  <p className="text-sm text-white/80">123 Education Hub,<br />Sector 62, Noida, UP</p>
+                  <p className="text-sm text-white/80">Kota, Rajasthan</p>
                 </div>
               </li>
             </ul>

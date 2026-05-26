@@ -9,6 +9,11 @@ import TestSeries from './pages/TestSeries';
 import Results from './pages/Results';
 import StudyMaterial from './pages/StudyMaterial';
 import AboutUs from './pages/AboutUs';
+import Scholarship from './pages/Scholarship';
+import PrepzoStore from './pages/PrepzoStore';
+import Blogs from './pages/Blogs';
+import News from './pages/News';
+import Careers from './pages/Careers';
 
 // Context & Modal
 import { EnrollProvider } from './context/EnrollContext';
@@ -27,6 +32,11 @@ function App() {
             <Route path="/results" element={<Results />} />
             <Route path="/study-material" element={<StudyMaterial />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/scholarship" element={<Scholarship />} />
+            <Route path="/store" element={<PrepzoStore />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
         </main>
         <Footer />
