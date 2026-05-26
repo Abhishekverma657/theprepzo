@@ -78,7 +78,7 @@ const AboutUs = () => (
         <h2 className="text-2xl font-black text-gray-900 mb-7">Contact Us</h2>
         <div className="grid sm:grid-cols-3 gap-6 mb-8">
           {[
-            { icon: Phone, label: 'Call Us', val: '+91 93116 23522', href: 'tel:+919311623522' },
+            { icon: Phone, label: 'Call Us', val: '+91 87963 39455', href: 'tel:+918796339455' },
             { icon: Mail, label: 'Email Us', val: 'prepzo333@gmail.com', href: 'mailto:prepzo333@gmail.com' },
             { icon: MapPin, label: 'Visit Us', val: '123 Education Hub, Sector 62, Noida', href: '#' },
           ].map((c, i) => (
@@ -93,8 +93,8 @@ const AboutUs = () => (
             </a>
           ))}
         </div>
-        <a href="tel:+919311623522" className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 gradient-green text-white font-bold rounded-full hover:opacity-90 transition-all">
-          <Phone className="h-5 w-5" /> Call +91 93116 23522 Now <ArrowRight className="h-5 w-5" />
+        <a href="tel:+918796339455" className="flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 gradient-green text-white font-bold rounded-full hover:opacity-90 transition-all">
+          <Phone className="h-5 w-5" /> Call +91 87963 39455 Now <ArrowRight className="h-5 w-5" />
         </a>
       </div>
     </div>

@@ -51,8 +51,8 @@ const HeroSection = () => {
               <button onClick={() => openModal()} className="flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-full text-white gradient-green shadow-lg hover:opacity-90 hover:-translate-y-0.5 transition-all">
                 Start Learning Now <ArrowRight className="h-5 w-5" />
               </button>
-              <a href="tel:+919311623522" className="flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-full text-prepzo-green bg-white border-2 border-prepzo-green/20 hover:border-prepzo-green hover:bg-prepzo-light-green transition-all">
-                <Phone className="h-5 w-5" /> 93116 23522
+              <a href="tel:+918796339455" className="flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-full text-prepzo-green bg-white border-2 border-prepzo-green/20 hover:border-prepzo-green hover:bg-prepzo-light-green transition-all">
+                <Phone className="h-5 w-5" /> 87963 39455
               </a>
             </div>
 

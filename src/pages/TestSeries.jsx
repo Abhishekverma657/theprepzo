@@ -77,10 +77,10 @@ const TestSeries = () => {
       <div className="mt-10 bg-prepzo-light-green border border-prepzo-green/20 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="font-black text-gray-900 text-lg">Get Full Test Series Access</p>
-          <p className="text-gray-600 text-sm mt-1">Call us at <span className="font-bold text-prepzo-green">+91 93116 23522</span> or enroll online.</p>
+          <p className="text-gray-600 text-sm mt-1">Call us at <span className="font-bold text-prepzo-green">+91 87963 39455</span> or enroll online.</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-4 sm:mt-0">
-          <a href="tel:+919311623522" className="flex justify-center items-center gap-2 px-5 py-3 bg-white border border-prepzo-green/20 text-prepzo-green font-bold rounded-xl text-sm hover:bg-prepzo-green hover:text-white transition-all w-full sm:w-auto">
+          <a href="tel:+918796339455" className="flex justify-center items-center gap-2 px-5 py-3 bg-white border border-prepzo-green/20 text-prepzo-green font-bold rounded-xl text-sm hover:bg-prepzo-green hover:text-white transition-all w-full sm:w-auto">
             <Phone className="h-4 w-4" /> Call Now
           </a>
           <button onClick={() => openModal('Test Series')} className="flex justify-center items-center gap-2 px-5 py-3 gradient-green text-white font-bold rounded-xl text-sm hover:opacity-90 transition-all w-full sm:w-auto">

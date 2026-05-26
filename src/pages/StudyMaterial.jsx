@@ -69,8 +69,8 @@ const StudyMaterial = () => {
         <p className="text-white font-black text-2xl mb-2">Unlock 10,000+ Premium Resources</p>
         <p className="text-white/70 mb-6">Enroll in any course to get full access to all study material, DPPs, and test series.</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="tel:+919311623522" className="flex items-center justify-center gap-2 px-7 py-3.5 bg-prepzo-yellow text-white font-bold rounded-full hover:opacity-90 transition-all">
-            <Phone className="h-5 w-5" /> +91 93116 23522
+          <a href="tel:+918796339455" className="flex items-center justify-center gap-2 px-7 py-3.5 bg-prepzo-yellow text-white font-bold rounded-full hover:opacity-90 transition-all">
+            <Phone className="h-5 w-5" /> +91 87963 39455
           </a>
           <button onClick={() => openModal('Study Material Access')} className="flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-prepzo-green font-bold rounded-full hover:bg-prepzo-light-green transition-all">
             Enroll Now <ArrowRight className="h-5 w-5" />

@@ -64,11 +64,11 @@ const Results = () => (
       <div className="bg-white border border-gray-100 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
           <p className="font-black text-gray-900 text-2xl">You could be next! 🚀</p>
-          <p className="text-gray-600 mt-2">Call <span className="font-bold text-prepzo-green">+91 93116 23522</span> to start your journey today.</p>
+          <p className="text-gray-600 mt-2">Call <span className="font-bold text-prepzo-green">+91 87963 39455</span> to start your journey today.</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto mt-4 sm:mt-0">
-          <a href="tel:+919311623522" className="flex justify-center items-center gap-2 px-6 py-3.5 bg-prepzo-light-green border border-prepzo-green/20 text-prepzo-green font-bold rounded-full text-sm hover:bg-prepzo-green hover:text-white transition-all w-full sm:w-auto">
-            <Phone className="h-4 w-4" /> 93116 23522
+          <a href="tel:+918796339455" className="flex justify-center items-center gap-2 px-6 py-3.5 bg-prepzo-light-green border border-prepzo-green/20 text-prepzo-green font-bold rounded-full text-sm hover:bg-prepzo-green hover:text-white transition-all w-full sm:w-auto">
+            <Phone className="h-4 w-4" /> 87963 39455
           </a>
           <Link to="/courses" className="flex justify-center items-center gap-2 px-6 py-3.5 gradient-green text-white font-bold rounded-full text-sm hover:opacity-90 transition-all w-full sm:w-auto">
             Enroll Now <ArrowRight className="h-4 w-4" />

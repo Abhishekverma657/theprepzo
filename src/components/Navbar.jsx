@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="gradient-green text-white text-xs py-1.5 hidden sm:flex items-center justify-between px-6">
         <div className="flex items-center gap-2">
           <Phone className="h-3 w-3" />
-          <span>+91 93116 23522 &nbsp;|&nbsp; prepzo333@gmail.com</span>
+          <span>+91 87963 39455 &nbsp;|&nbsp; prepzo333@gmail.com</span>
         </div>
         <span className="font-semibold text-prepzo-yellow animate-pulse">🎉 Admissions Open for JEE &amp; NEET 2026 Batch!</span>
         <span className="text-xs text-white/70">Smart prep, learn anytime anywhere</span>
@@ -70,8 +70,8 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center gap-3">
-              <a href="tel:+919311623522" className="flex items-center gap-2 text-sm font-semibold text-prepzo-green hover:text-prepzo-green-dark transition-colors">
-                <Phone className="h-4 w-4" /> 93116 23522
+              <a href="tel:+918796339455" className="flex items-center gap-2 text-sm font-semibold text-prepzo-green hover:text-prepzo-green-dark transition-colors">
+                <Phone className="h-4 w-4" /> 87963 39455
               </a>
               <button onClick={() => openModal()} className="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white rounded-full gradient-green hover:opacity-90 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
                 <User className="h-4 w-4" /> Enroll Now
@@ -93,8 +93,8 @@ const Navbar = () => {
                   isActive(link.path) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-700 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
                 }`}>{link.name}</Link>
             ))}
-            <a href="tel:+919311623522" className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-prepzo-green bg-prepzo-light-green rounded-xl">
-              <Phone className="h-4 w-4" /> +91 93116 23522
+            <a href="tel:+918796339455" className="flex items-center gap-2 px-4 py-3 text-sm font-semibold text-prepzo-green bg-prepzo-light-green rounded-xl">
+              <Phone className="h-4 w-4" /> +91 87963 39455
             </a>
             <button onClick={() => { setIsMobileMenuOpen(false); openModal(); }} className="w-full flex justify-center items-center gap-2 px-4 py-3 text-base font-semibold text-white gradient-green rounded-xl shadow-md">
               <User className="h-5 w-5" /> Enroll Now
