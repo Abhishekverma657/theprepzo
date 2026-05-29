@@ -26,18 +26,18 @@ const Navbar = () => {
     { name: 'Results', path: '/results', hasDropdown: false },
     { name: 'Study Material', path: '/study-material', hasDropdown: false },
     { name: 'Scholarship', path: '/scholarship', hasDropdown: false },
-    { name: 'Prepzo Store', path: '/store', hasDropdown: false },
-    { 
-      name: 'About Us', 
-      path: '/about-us', 
-      hasDropdown: true,
-      dropdownItems: [
-        { name: 'About Prepzo', path: '/about-us' },
-        { name: 'Blogs', path: '/blogs' },
-        { name: 'News', path: '/news' },
-        { name: 'Careers', path: '/careers' }
-      ]
-    },
+    // { name: 'Prepzo Store', path: '/store', hasDropdown: false },
+    // { 
+    //   name: 'About Us', 
+    //   path: '/about-us', 
+    //   hasDropdown: true,
+    //   dropdownItems: [
+    //     { name: 'About Prepzo', path: '/about-us' },
+    //     // { name: 'Blogs', path: '/blogs' },
+    //     // { name: 'News', path: '/news' },
+    //     { name: 'Careers', path: '/careers' }
+    //   ]
+    // },
   ];
 
   const isActive = (path) => location.pathname === path;

@@ -3,11 +3,12 @@ import { ArrowRight } from 'lucide-react';
 import { useEnroll } from '../context/EnrollContext';
 
 const courses = [
-  { emoji: '⚛️', title: 'JEE Main + Advanced', tag: 'Class 11, 12 & Droppers', features: ['500+ Hrs Live Classes', 'All India Test Series', 'IIT Expert Faculty'], from: 'from-blue-50', accent: 'border-blue-200', tagColor: 'bg-blue-100 text-blue-700', price: '₹89,000' },
-  { emoji: '🧬', title: 'NEET (UG)', tag: 'Class 11, 12 & Droppers', features: ['NCERT-First Approach', 'Bio Video Library', 'AIIMS Doctor Faculty'], from: 'from-green-50', accent: 'border-green-200', tagColor: 'bg-green-100 text-green-700', price: '₹79,000' },
-  { emoji: '📘', title: 'Board Exam Mastery', tag: 'Class 10 & 12 CBSE', features: ['All Subjects', 'Sample Paper Series', 'Marking Scheme Tips'], from: 'from-yellow-50', accent: 'border-yellow-200', tagColor: 'bg-yellow-100 text-yellow-700', price: '₹28,000' },
-  { emoji: '🏅', title: 'Olympiad Prep', tag: 'Class 4 – 10', features: ['IMO, NSO & NTSE', 'Logic & Aptitude', 'Medal Strategy'], from: 'from-purple-50', accent: 'border-purple-200', tagColor: 'bg-purple-100 text-purple-700', price: '₹18,000' },
+  { emoji: '⚛️', title: 'JEE Main + Advanced', tag: 'Class 11, 12 & Droppers', features: ['500+ Hours of Live Interactive Classes', 'National Level Test Series & Practice', 'Experienced IIT-JEE Faculty Support'], from: 'from-blue-50', accent: 'border-blue-200', tagColor: 'bg-blue-100 text-blue-700', price: '₹89,000', button: 'Enroll →' },
+  { emoji: '🧬', title: 'NEET (UG)', tag: 'Class 11, 12 & Droppers', features: ['NCERT-Focused Preparation Strategy', 'Recorded Biology Video Library', 'Guidance from Expert Medical Faculty'], from: 'from-green-50', accent: 'border-green-200', tagColor: 'bg-green-100 text-green-700', price: '₹79,000', button: 'Enroll →' },
+  { emoji: '📘', title: 'Board Exam Preparation', tag: 'Class 10 & 12 CBSE', features: ['Complete Subject-Wise Coverage', 'Sample Papers & Revision Tests', 'Smart Answer Writing Techniques'], from: 'from-yellow-50', accent: 'border-yellow-200', tagColor: 'bg-yellow-100 text-yellow-700', price: '₹28,000', button: 'Explore Program →' },
+  { emoji: '🏅', title: 'Olympiad Foundation Program', tag: 'Class 4 – 10', features: ['IMO, NSO & Scholarship Exam Prep', 'Logical Reasoning & Aptitude Training', 'Advanced Problem-Solving Sessions'], from: 'from-purple-50', accent: 'border-purple-200', tagColor: 'bg-purple-100 text-purple-700', price: '₹18,000', button: 'Explore Program →' },
 ];
+
 
 const CoursesSection = () => {
   const { openModal } = useEnroll();
@@ -46,7 +47,7 @@ const CoursesSection = () => {
                 <div className="border-t border-black/5 pt-4 flex items-center justify-between">
                   <span className="text-xl font-black text-prepzo-green">{course.price}</span>
                   <button onClick={() => openModal(course.title)} className="flex items-center gap-1 text-xs font-bold text-prepzo-green hover:gap-2 transition-all">
-                    Enroll <ArrowRight className="h-3.5 w-3.5" />
+                    {course.button || 'Enroll →'}
                   </button>
                 </div>
               </div>

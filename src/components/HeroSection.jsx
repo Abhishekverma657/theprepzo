@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl lg:mx-0 mx-auto">
-              Join 50,000+ students mastering JEE, NEET, and Board exams with India's best faculty, live classes, and AI-powered test analytics.
+              Join 10,000+ aspirants preparing for JEE, NEET, and Boards with expert faculty, interactive live classes, and smart AI-driven performance analysis.
             </p>
 
             {/* Checklist */}
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 Start Learning Now <ArrowRight className="h-5 w-5" />
               </button>
               <a href="tel:+918796339455" className="flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-full text-prepzo-green bg-white border-2 border-prepzo-green/20 hover:border-prepzo-green hover:bg-prepzo-light-green transition-all">
-                <Phone className="h-5 w-5" /> 87963 39455
+                <Phone className="h-5 w-5" /> Contact
               </a>
             </div>
 

@@ -1,16 +1,9 @@
 import { Phone, Mail, MapPin, ArrowRight, Target, Heart, Lightbulb } from 'lucide-react';
 
-const team = [
-  { name: 'Rajiv Mehta', role: 'Physics — IIT Bombay', exp: '15 Yrs', emoji: '⚛️' },
-  { name: 'Dr. Sunita Rao', role: 'Biology — AIIMS Delhi', exp: '12 Yrs', emoji: '🧬' },
-  { name: 'Priya Nair', role: 'Chemistry — IIT Delhi', exp: '10 Yrs', emoji: '🧪' },
-  { name: 'Anil Sharma', role: 'Maths — IIT Madras', exp: '18 Yrs', emoji: '📐' },
-];
-
 const values = [
-  { icon: Target, title: 'Result Oriented', desc: 'Every strategy and resource is designed with one goal: your success in competitive exams.', color: 'bg-blue-50 text-blue-600 border-blue-100' },
-  { icon: Heart, title: 'Student First', desc: 'We genuinely care about each student\'s progress and well-being, not just enrollment numbers.', color: 'bg-red-50 text-red-600 border-red-100' },
-  { icon: Lightbulb, title: 'Innovation in Learning', desc: 'We continuously innovate with AI analytics, adaptive tests, and modern pedagogy.', color: 'bg-yellow-50 text-yellow-600 border-yellow-100' },
+  { icon: Target, title: 'Result Focused', desc: 'Everything we do is built to help students achieve top results in competitive exams.', color: 'bg-blue-50 text-blue-600 border-blue-100' },
+  { icon: Heart, title: 'Students Come First', desc: 'We focus on every student’s growth, confidence, and learning journey.', color: 'bg-red-50 text-red-600 border-red-100' },
+  { icon: Lightbulb, title: 'Smart Learning Approach', desc: 'Modern teaching methods, adaptive practice, and detailed performance tracking for better preparation.', color: 'bg-yellow-50 text-yellow-600 border-yellow-100' },
 ];
 
 const AboutUs = () => (
@@ -58,19 +51,12 @@ const AboutUs = () => (
         </div>
       </div>
 
-      {/* Expert Faculty */}
-      <div>
-        <h2 className="text-2xl font-black text-gray-900 mb-6">Meet Our Expert Faculty</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-          {team.map((t, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all">
-              <div className="h-16 w-16 gradient-green rounded-full flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg">{t.emoji}</div>
-              <h3 className="font-black text-gray-900 text-sm">{t.name}</h3>
-              <p className="text-xs text-prepzo-green font-semibold mt-1">{t.role}</p>
-              <p className="text-xs text-gray-400 mt-1">{t.exp} Experience</p>
-            </div>
-          ))}
-        </div>
+      {/* Founder Placeholder */}
+      <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 sm:p-10 text-center">
+        <h2 className="text-2xl font-black text-gray-900 mb-4">Meet the Founder</h2>
+        <div className="h-24 w-24 rounded-full bg-gray-100 border-gray-200 mx-auto mb-4 flex items-center justify-center text-3xl">👨‍🏫</div>
+        <h3 className="text-xl font-bold text-gray-900">Founder details to be added</h3>
+        <p className="text-gray-500 mt-2">Placeholder for founder details.</p>
       </div>
 
       {/* Contact */}

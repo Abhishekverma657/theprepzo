@@ -82,13 +82,8 @@ const Footer = () => {
               {[
                 { label: 'About Us', path: '/about-us' },
                 { label: 'Courses', path: '/courses' },
-                { label: 'Test Series', path: '/test-series' },
                 { label: 'Results', path: '/results' },
-                { label: 'Study Material', path: '/study-material' },
-                { label: 'Scholarship', path: '/scholarship' },
                 { label: 'Prepzo Store', path: '/store' },
-                { label: 'Blogs', path: '/blogs' },
-                { label: 'News', path: '/news' },
                 { label: 'Careers', path: '/careers' },
               ].map((link) => (
                 <li key={link.label}>
