@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="gradient-green text-white text-xs py-1.5 hidden sm:flex items-center justify-between px-6">
         <div className="flex items-center gap-2">
           <Phone className="h-3 w-3" />
-          <span>+91 87963 39455 &nbsp;|&nbsp; prepzo333@gmail.com</span>
+          <span>+91 87963 39455 &nbsp;|&nbsp; theprepzo05@gmail.com</span>
         </div>
         <span className="font-semibold text-prepzo-yellow animate-pulse">🎉 Admissions Open for JEE &amp; NEET 2026 Batch!</span>
         <span className="text-xs text-white/70">Smart prep, learn anytime anywhere</span>

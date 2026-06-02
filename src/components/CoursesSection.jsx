@@ -3,10 +3,10 @@ import { ArrowRight } from 'lucide-react';
 import { useEnroll } from '../context/EnrollContext';
 
 const courses = [
-  { emoji: '⚛️', title: 'JEE Main + Advanced', tag: 'Class 11, 12 & Droppers', features: ['500+ Hours of Live Interactive Classes', 'National Level Test Series & Practice', 'Experienced IIT-JEE Faculty Support'], from: 'from-blue-50', accent: 'border-blue-200', tagColor: 'bg-blue-100 text-blue-700', price: '₹89,000', button: 'Enroll →' },
-  { emoji: '🧬', title: 'NEET (UG)', tag: 'Class 11, 12 & Droppers', features: ['NCERT-Focused Preparation Strategy', 'Recorded Biology Video Library', 'Guidance from Expert Medical Faculty'], from: 'from-green-50', accent: 'border-green-200', tagColor: 'bg-green-100 text-green-700', price: '₹79,000', button: 'Enroll →' },
-  { emoji: '📘', title: 'Board Exam Preparation', tag: 'Class 10 & 12 CBSE', features: ['Complete Subject-Wise Coverage', 'Sample Papers & Revision Tests', 'Smart Answer Writing Techniques'], from: 'from-yellow-50', accent: 'border-yellow-200', tagColor: 'bg-yellow-100 text-yellow-700', price: '₹28,000', button: 'Explore Program →' },
-  { emoji: '🏅', title: 'Olympiad Foundation Program', tag: 'Class 4 – 10', features: ['IMO, NSO & Scholarship Exam Prep', 'Logical Reasoning & Aptitude Training', 'Advanced Problem-Solving Sessions'], from: 'from-purple-50', accent: 'border-purple-200', tagColor: 'bg-purple-100 text-purple-700', price: '₹18,000', button: 'Explore Program →' },
+  { emoji: '⚛️', title: 'JEE Main + Advanced', tag: 'Class 11, 12 & Droppers', features: ['500+ Hours of Live Interactive Classes', 'National Level Test Series & Practice', 'Experienced IIT-JEE Faculty Support'], from: 'from-blue-50', accent: 'border-blue-200', tagColor: 'bg-blue-100 text-blue-700', price: '₹88,999', button: 'Enroll →' },
+  { emoji: '🧬', title: 'NEET (UG)', tag: 'Class 11, 12 & Droppers', features: ['NCERT-Focused Preparation Strategy', 'Recorded Biology Video Library', 'Guidance from Expert Medical Faculty'], from: 'from-green-50', accent: 'border-green-200', tagColor: 'bg-green-100 text-green-700', price: '₹78,999', button: 'Enroll →' },
+  { emoji: '📘', title: 'Board Exam Preparation', tag: 'Class 10 & 12 CBSE', features: ['Complete Subject-Wise Coverage', 'Sample Papers & Revision Tests', 'Smart Answer Writing Techniques'], from: 'from-yellow-50', accent: 'border-yellow-200', tagColor: 'bg-yellow-100 text-yellow-700', price: '₹27,999', button: 'Explore Program →' },
+  { emoji: '🏅', title: 'Olympiad Foundation Program', tag: 'Class 4 – 10', features: ['IMO, NSO & Scholarship Exam Prep', 'Logical Reasoning & Aptitude Training', 'Advanced Problem-Solving Sessions'], from: 'from-purple-50', accent: 'border-purple-200', tagColor: 'bg-purple-100 text-purple-700', price: '₹17,999', button: 'Explore Program →' },
 ];
 
 

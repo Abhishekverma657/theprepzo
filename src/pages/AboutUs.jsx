@@ -65,7 +65,7 @@ const AboutUs = () => (
         <div className="grid sm:grid-cols-3 gap-6 mb-8">
           {[
             { icon: Phone, label: 'Call Us', val: '+91 87963 39455', href: 'tel:+918796339455' },
-            { icon: Mail, label: 'Email Us', val: 'prepzo333@gmail.com', href: 'mailto:prepzo333@gmail.com' },
+            { icon: Mail, label: 'Email Us', val: 'theprepzo05@gmail.com', href: 'mailto:theprepzo05@gmail.com' },
             { icon: MapPin, label: 'Visit Us', val: 'Kota, Rajasthan', href: '#' },
           ].map((c, i) => (
             <a key={i} href={c.href} className="flex items-start gap-4 p-4 rounded-xl border border-gray-100 hover:border-prepzo-green/30 hover:bg-prepzo-light-green/30 transition-all group">
