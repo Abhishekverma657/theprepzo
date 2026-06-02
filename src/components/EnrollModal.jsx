@@ -3,7 +3,7 @@ import { X, CheckCircle, Loader2 } from 'lucide-react';
 import { useEnroll } from '../context/EnrollContext';
 
 // The deployed Google Apps Script Web App URL for form submissions
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxgSaPDS3PdRz4nvBak0am3aKkxZLxEnYDbkuCAAaDalQqAWLHPBZwBO0LslYoALirS/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxohpP721-pDvxrxIt9DU60kt_DOv3Na9JckeqL028ZlnwbmXErIUHERVtiXABv61h3/exec';
 
 const EnrollModal = () => {
   const { isModalOpen, closeModal, prefilledCourse } = useEnroll();

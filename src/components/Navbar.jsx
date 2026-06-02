@@ -54,9 +54,8 @@ const Navbar = () => {
         <span className="text-xs text-white/70">Smart prep, learn anytime anywhere</span>
       </div>
 
-      <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' : 'bg-white border-b border-gray-100'
-      }`}>
+      <nav className={`sticky top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100' : 'bg-white border-b border-gray-100'
+        }`}>
         <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center gap-3 flex-shrink-0 group">
@@ -73,9 +72,8 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <div key={link.name} className="relative group">
                   <Link to={link.path}
-                    className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                      isActive(link.path) || (link.hasDropdown && location.pathname.startsWith(link.path)) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-600 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
-                    }`}>
+                    className={`flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${isActive(link.path) || (link.hasDropdown && location.pathname.startsWith(link.path)) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-600 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
+                      }`}>
                     {link.name}
                     {link.hasDropdown && <ChevronDown className="ml-1 h-3.5 w-3.5 opacity-60 group-hover:rotate-180 transition-transform duration-200" />}
                   </Link>
@@ -115,9 +113,8 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <div key={link.name} className="space-y-1">
                 <Link to={link.path} onClick={() => !link.hasDropdown && setIsMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-4 py-3 text-base font-medium rounded-xl transition-colors ${
-                    isActive(link.path) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-700 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
-                  }`}>
+                  className={`flex items-center justify-between px-4 py-3 text-base font-medium rounded-xl transition-colors ${isActive(link.path) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-700 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
+                    }`}>
                   {link.name}
                   {link.hasDropdown && <ChevronDown className="h-4 w-4" />}
                 </Link>
@@ -125,9 +122,8 @@ const Navbar = () => {
                   <div className="pl-4 space-y-1 pb-2">
                     {link.dropdownItems.map((item) => (
                       <Link key={item.name} to={item.path} onClick={() => setIsMobileMenuOpen(false)}
-                        className={`block px-4 py-2.5 text-sm font-medium rounded-xl transition-colors ${
-                          isActive(item.path) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-600 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
-                        }`}>
+                        className={`block px-4 py-2.5 text-sm font-medium rounded-xl transition-colors ${isActive(item.path) ? 'text-prepzo-green bg-prepzo-light-green' : 'text-gray-600 hover:text-prepzo-green hover:bg-prepzo-light-green/50'
+                          }`}>
                         {item.name}
                       </Link>
                     ))}
