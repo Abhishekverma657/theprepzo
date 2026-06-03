@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, ArrowRight, Target, Heart, Lightbulb } from 'lucide-react';
+import founderImg from '../assets/prepzo-founder.jpeg';
 
 const values = [
   { icon: Target, title: 'Result Focused', desc: 'Everything we do is built to help students achieve top results in competitive exams.', color: 'bg-blue-50 text-blue-600 border-blue-100' },
@@ -51,12 +52,41 @@ const AboutUs = () => (
         </div>
       </div>
 
-      {/* Founder Placeholder */}
-      <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 sm:p-10 text-center">
-        <h2 className="text-2xl font-black text-gray-900 mb-4">Meet the Founder</h2>
-        <div className="h-24 w-24 rounded-full bg-gray-100 border-gray-200 mx-auto mb-4 flex items-center justify-center text-3xl">👨‍🏫</div>
-        <h3 className="text-xl font-bold text-gray-900">Founder details to be added</h3>
-        <p className="text-gray-500 mt-2">Placeholder for founder details.</p>
+      {/* Meet the Founder */}
+      <div className="bg-white rounded-3xl border border-gray-100 shadow-xl shadow-prepzo-green/5 p-8 sm:p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div className="absolute -top-24 -right-24 w-64 h-64 bg-prepzo-yellow/20 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-prepzo-green/10 rounded-full blur-3xl"></div>
+        
+        {/* Modern Image Frame */}
+        <div className="relative w-56 h-56 sm:w-72 sm:h-72 flex-shrink-0 group mx-auto md:mx-0">
+          {/* Decorative background elements */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-prepzo-green to-prepzo-yellow rounded-full rotate-6 opacity-30 group-hover:rotate-12 transition-transform duration-500 scale-105"></div>
+          <div className="absolute inset-0 bg-white rounded-full border-4 border-white shadow-xl overflow-hidden z-10 flex items-center justify-center p-2">
+            <img 
+              src={founderImg} 
+              alt="Ritansha Hada" 
+              className="w-full h-full object-contain rounded-full" 
+            />
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="flex-1 relative z-10 text-center md:text-left">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-prepzo-green mb-2">Meet the Founder</h2>
+          <h3 className="text-3xl sm:text-4xl font-black text-gray-900 mb-2">Ritansha Hada</h3>
+          <p className="text-lg font-medium text-gray-500 mb-8">Founder & CEO, Prepzo</p>
+          <div className="relative inline-block md:block">
+            <svg className="absolute -top-4 -left-6 sm:-left-8 h-8 w-8 text-prepzo-green/10 hidden sm:block" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+            </svg>
+            <p className="text-gray-600 leading-relaxed italic relative z-10 sm:pl-2">
+              "My mission is to democratize high-quality education. At Prepzo, we believe that with the right guidance, smart strategies, and relentless support, any student can unlock their true potential and achieve their biggest dreams."
+            </p>
+          </div>
+          <div className="mt-8 flex gap-4 justify-center md:justify-start">
+             <div className="h-1.5 w-12 gradient-green rounded-full"></div>
+          </div>
+        </div>
       </div>
 
       {/* Contact */}
