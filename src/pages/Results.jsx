@@ -1,13 +1,25 @@
 import { Trophy, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import imgShubhran from '../assets/testimonial/Shubhran Sharma.jpeg';
+import imgAditya from '../assets/testimonial/Aditya.png';
+import imgRitik from '../assets/testimonial/Ritik.jpeg';
+import imgPriyam from '../assets/testimonial/Priyam Vatsa.jpeg';
+import imgPranav from '../assets/testimonial/Pranav Vatsa.jpeg';
+import imgHansika from '../assets/testimonial/Hansika Photo.jpeg';
+import imgSangeeta from '../assets/testimonial/Sangeeta Photo.jpeg';
+import imgUday from '../assets/testimonial/Uday.jpeg';
+
 const toppers = [
-  { name: 'Aarav Gupta', rank: 'AIR 1', exam: 'JEE Advanced 2024', score: '341/360', color: 'gradient-yellow', trophy: '🥇' },
-  { name: 'Priya Patel', rank: 'AIR 5', exam: 'NEET UG 2024', score: '715/720', color: 'gradient-green', trophy: '🥈' },
-  { name: 'Rohan Sharma', rank: 'AIR 12', exam: 'JEE Main 2024', score: '100 %ile', color: 'gradient-green', trophy: '🥉' },
-  { name: 'Sneha Reddy', rank: 'AIR 24', exam: 'NEET UG 2024', score: '705/720', color: 'gradient-green', trophy: '🏅' },
-  { name: 'Karan Singh', rank: 'AIR 45', exam: 'JEE Advanced 2024', score: '298/360', color: 'gradient-green', trophy: '🏅' },
-  { name: 'Megha Jain', rank: 'AIR 56', exam: 'NEET UG 2024', score: '700/720', color: 'gradient-green', trophy: '🏅' },
+  { name: 'Shubhran Sharma', rank: 'AIR 47', exam: 'JEE Advanced', image: imgShubhran, color: 'gradient-green', trophy: '🥇' },
+  { name: 'Aditya', rank: 'AIR 1727', exam: 'JEE Advanced', image: imgAditya, color: 'gradient-green', trophy: '🥈' },
+  { name: 'Ritik', rank: 'AIR 3317', exam: 'JEE Advanced', image: imgRitik, color: 'gradient-green', trophy: '🥉' },
+  { name: 'Priyam Vatsa', rank: 'AIR 3744', exam: 'JEE Advanced', image: imgPriyam, color: 'gradient-green', trophy: '🏅' },
+  { name: 'Rehan', rank: 'AIR 6331', exam: 'JEE Advanced', image: null, initials: 'RH', color: 'gradient-green', trophy: '🏅' },
+  { name: 'Pranav Vatsa', rank: 'AIR 18905', exam: 'JEE Advanced', image: imgPranav, color: 'gradient-green', trophy: '🏅' },
+  { name: 'Hansika Agarwal', rank: 'Selected', exam: 'NEET UG', image: imgHansika, color: 'gradient-green', trophy: '🌟' },
+  { name: 'Sangeeta Manna', rank: 'Selected', exam: 'NEET UG', image: imgSangeeta, color: 'gradient-green', trophy: '🌟' },
+  { name: 'Uday Dubey', rank: 'IIT Patna', exam: 'B.Tech CSE', image: imgUday, color: 'gradient-green', trophy: '🎓' },
 ];
 
 const stats = [
@@ -40,21 +52,25 @@ const Results = () => (
       </div>
 
       {/* Toppers Grid */}
-      <h2 className="text-2xl font-black text-gray-900 mb-7">⭐ Top Rankers 2024</h2>
+      <h2 className="text-2xl font-black text-gray-900 mb-7">⭐ Top Rankers</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
         {toppers.map((t, i) => (
           <div key={i} className="bg-white rounded-3xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all group">
-            <div className="gradient-green h-20 flex items-end px-6 pb-0 relative">
+            <div className={`${t.color} h-20 flex items-end px-6 pb-0 relative`}>
               <div className="absolute top-4 right-5 text-2xl">{t.trophy}</div>
-              <div className="h-16 w-16 rounded-2xl bg-white flex items-center justify-center translate-y-8 shadow-lg border-4 border-white text-2xl">
-                {t.trophy}
+              <div className="h-16 w-16 rounded-2xl bg-white flex items-center justify-center translate-y-8 shadow-lg border-4 border-white text-2xl overflow-hidden">
+                {t.image ? (
+                  <img src={t.image} alt={t.name} className="h-full w-full object-cover" />
+                ) : (
+                  <span className="text-prepzo-green font-bold text-xl">{t.initials || t.trophy}</span>
+                )}
               </div>
             </div>
             <div className="px-6 pt-12 pb-6">
               <span className="inline-block text-xs font-black text-white bg-prepzo-green px-3 py-1 rounded-full mb-3">{t.rank}</span>
               <h3 className="text-xl font-black text-gray-900">{t.name}</h3>
               <p className="text-sm text-prepzo-green font-semibold mt-1">{t.exam}</p>
-              <p className="text-xs text-gray-500 mt-1">Score: <span className="font-bold text-gray-700">{t.score}</span></p>
+              {t.score && <p className="text-xs text-gray-500 mt-1">Score: <span className="font-bold text-gray-700">{t.score}</span></p>}
             </div>
           </div>
         ))}
