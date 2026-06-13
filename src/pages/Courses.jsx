@@ -202,11 +202,78 @@ const courseData = {
       gradient: 'from-fuchsia-50 to-white',
       accent: 'border-fuchsia-200',
     }
+  ],
+  Foundation: [
+    {
+      _id: 'found1',
+      badge: 'OLYMPIAD + NCERT',
+      badgeColor: 'bg-blue-500',
+      title: 'Class 6',
+      desc: 'Build strong fundamentals in Mathematics and Science with concept-based learning and Olympiad preparation.',
+      features: ['Olympiads + NCERT Course'],
+      duration: 'Duration: 1 Year',
+      price: '₹38,999 + Taxes',
+      btn: 'Enroll Now',
+      gradient: 'from-blue-50 to-white',
+      accent: 'border-blue-200',
+    },
+    {
+      _id: 'found2',
+      badge: 'OLYMPIAD + NCERT',
+      badgeColor: 'bg-green-500',
+      title: 'Class 7',
+      desc: 'Strengthen analytical thinking and academic concepts through structured NCERT and Olympiad preparation.',
+      features: ['Olympiads + NCERT Course'],
+      duration: 'Duration: 1 Year',
+      price: '₹38,999',
+      btn: 'Enroll Now',
+      gradient: 'from-green-50 to-white',
+      accent: 'border-green-200',
+    },
+    {
+      _id: 'found3',
+      badge: 'ADVANCED FOUNDATION',
+      badgeColor: 'bg-purple-500',
+      title: 'Class 8',
+      desc: 'Develop problem-solving abilities and prepare for competitive exams while mastering school academics.',
+      features: ['Olympiads + NCERT Course'],
+      duration: 'Duration: 1 Year',
+      price: '₹40,499',
+      btn: 'Enroll Now',
+      gradient: 'from-purple-50 to-white',
+      accent: 'border-purple-200',
+    },
+    {
+      _id: 'found4',
+      badge: 'COMPETITIVE EDGE',
+      badgeColor: 'bg-orange-500',
+      title: 'Class 9',
+      desc: 'Build advanced concepts and critical thinking skills to excel in school exams and Olympiads.',
+      features: ['Olympiads + NCERT Course'],
+      duration: 'Duration: 1 Year',
+      price: '₹42,499',
+      btn: 'Enroll Now',
+      gradient: 'from-orange-50 to-white',
+      accent: 'border-orange-200',
+    },
+    {
+      _id: 'found5',
+      badge: 'BOARD + OLYMPIAD',
+      badgeColor: 'bg-red-500',
+      title: 'Class 10',
+      desc: 'Achieve excellence in board examinations while building a strong foundation for future competitive exams.',
+      features: ['Olympiads + NCERT Course'],
+      duration: 'Duration: 1 Year',
+      price: '₹42,499',
+      btn: 'Enroll Now',
+      gradient: 'from-red-50 to-white',
+      accent: 'border-red-200',
+    }
   ]
 };
 
-const categories = ['JEE', 'NEET', 'Board', 'Olympiad'];
-const tabIcons = { JEE: '⚛️', NEET: '🧬', Board: '📘', Olympiad: '🏅' };
+const categories = ['JEE', 'NEET', 'Board', 'Olympiad', 'Foundation'];
+const tabIcons = { JEE: '⚛️', NEET: '🧬', Board: '📘', Olympiad: '🏅', Foundation: '📖' };
 
 const CourseCard = ({ course }) => {
   const { openModal } = useEnroll();
@@ -229,11 +296,13 @@ const CourseCard = ({ course }) => {
         )}
 
         {/* Stats */}
-        <div className="flex flex-col gap-2 text-xs text-gray-500 mb-5 border-t border-black/5 pt-4">
-          <span className="flex items-center gap-2"><Clock className="h-3.5 w-3.5 text-gray-400" /> {course.duration}</span>
-          <span className="flex items-center gap-2"><Users className="h-3.5 w-3.5 text-gray-400" /> {course.students}</span>
-          {course.rating && <span className="flex items-center gap-2"><Activity className="h-3.5 w-3.5 text-gray-400" /> {course.rating}</span>}
-        </div>
+        {(course.duration || course.students || course.rating) && (
+          <div className="flex flex-col gap-2 text-xs text-gray-500 mb-5 border-t border-black/5 pt-4">
+            {course.duration && <span className="flex items-center gap-2"><Clock className="h-3.5 w-3.5 text-gray-400" /> {course.duration}</span>}
+            {course.students && <span className="flex items-center gap-2"><Users className="h-3.5 w-3.5 text-gray-400" /> {course.students}</span>}
+            {course.rating && <span className="flex items-center gap-2"><Activity className="h-3.5 w-3.5 text-gray-400" /> {course.rating}</span>}
+          </div>
+        )}
 
         {/* Features */}
         <ul className="space-y-2 mb-6 border-t border-black/5 pt-4">
@@ -251,9 +320,9 @@ const CourseCard = ({ course }) => {
 
         <div className="flex-grow" />
 
-        <div className="flex items-center justify-between mt-auto pt-4 border-t border-black/5">
-          <span className="text-xl font-black text-prepzo-green">{course.price}</span>
-          <button onClick={() => openModal(course.title)} className="flex items-center gap-2 px-5 py-2.5 gradient-green text-white rounded-xl text-sm font-semibold hover:opacity-90 transition-all shadow-md">
+        <div className="flex flex-wrap items-center justify-between gap-3 mt-auto pt-4 border-t border-black/5">
+          <span className="text-lg xl:text-xl font-black text-prepzo-green">{course.price}</span>
+          <button onClick={() => openModal(course.title)} className="flex-1 min-w-[110px] flex justify-center items-center gap-2 px-4 py-2.5 gradient-green text-white rounded-xl text-sm font-semibold hover:opacity-90 transition-all shadow-md whitespace-nowrap">
             {course.btn}
           </button>
         </div>
@@ -281,6 +350,10 @@ const Courses = () => {
     Olympiad: {
       heading: 'Programs Designed for Every Academic Goal',
       sub: 'Structured learning paths built to help students succeed in competitive exams, boards, and olympiads.'
+    },
+    Foundation: {
+      heading: 'Foundation Programs (Class 6–10)',
+      sub: 'Strengthen concepts, excel in Olympiads, and master NCERT with a structured foundation program for Classes 6 to 10.'
     }
   };
 
@@ -330,13 +403,13 @@ const Courses = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className={`mx-auto px-4 sm:px-6 lg:px-8 py-14 ${activeTab === 'Foundation' ? 'max-w-[1400px]' : 'max-w-7xl'}`}>
         <div className="mb-10 text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-black text-gray-900 mb-3">{tabHeadings[activeTab].heading}</h2>
           <p className="text-gray-600">{tabHeadings[activeTab].sub}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+        <div className={`grid grid-cols-1 ${activeTab === 'Foundation' ? 'md:grid-cols-3 lg:grid-cols-5 gap-4' : 'md:grid-cols-2 xl:grid-cols-3 gap-7'}`}>
           {courseData[activeTab]?.map((course) => (
             <CourseCard key={course._id} course={course} />
           ))}
